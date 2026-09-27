@@ -135,20 +135,6 @@ mocked via `tests/conftest.py`).
 
 On Linux/macOS the same commands are available via `make install|ingest|batch-analyze|themes|eval|test`.
 
-## Debugging in VS Code
-
-[.vscode/launch.json](.vscode/launch.json) has ready-made `debugpy` configurations (Run and Debug
-panel, or F5) for every CLI command plus tests:
-
-- `CI: analyze` / `CI: batch-analyze` / `CI: themes` / `CI: ingest` / `CI: ask` / `CI: eval` - run
-  the corresponding `ci` subcommand via `python -m customer_intelligence.cli --debug ...` so
-  breakpoints in any module hit as usual (no need to install the console script first).
-- `Python: Current File` - run/debug whatever `.py` file is open.
-- `Pytest: All Tests` / `Pytest: Current File` - debug the test suite.
-
-All configurations load environment variables from `.env` and set `justMyCode: false` so you can
-step into library code (e.g. `openai`, `faiss`) if needed.
-
 ## Project structure
 
 ```
