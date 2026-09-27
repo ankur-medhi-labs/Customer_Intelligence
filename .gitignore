@@ -8,7 +8,7 @@ __pycache__/
 .pytest_cache/
 .venv/
 venv/
-assessments/
+assessment/
 
 # Generated artifacts (rebuildable)
 artifacts/
