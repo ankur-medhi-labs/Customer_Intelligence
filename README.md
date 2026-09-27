@@ -12,7 +12,6 @@ See [assessment/AI_Engineer_Technical_Assessment.md](assessment/AI_Engineer_Tech
 - [Note on AWS Bedrock](#note-on-aws-bedrock)
 - [Setup](#setup)
 - [Running](#running)
-- [Debugging in VS Code](#debugging-in-vs-code)
 - [Project structure](#project-structure)
 - [Architecture](#architecture)
 - [Customer temperature](#customer-temperature)
