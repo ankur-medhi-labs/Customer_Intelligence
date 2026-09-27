@@ -1,0 +1,94 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "CI: analyze",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "customer_intelligence.cli",
+      "args": ["--debug", "analyze", "--index", "0"],
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "CI: batch-analyze",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "customer_intelligence.cli",
+      "args": ["--debug", "batch-analyze"],
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "CI: themes",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "customer_intelligence.cli",
+      "args": ["--debug", "themes"],
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "CI: ingest",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "customer_intelligence.cli",
+      "args": ["--debug", "ingest"],
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "CI: ask",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "customer_intelligence.cli",
+      "args": ["--debug", "ask", "What is your refund policy?"],
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "CI: eval",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "customer_intelligence.cli",
+      "args": ["--debug", "eval"],
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "Python: Current File",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "Pytest: All Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": ["-v", "${workspaceFolder}/tests"],
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "Pytest: Current File",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": ["-v", "${file}"],
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

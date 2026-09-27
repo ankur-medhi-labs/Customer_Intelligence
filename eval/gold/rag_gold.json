@@ -1,0 +1,10 @@
+[
+  {"question": "How long do I have to return a faulty new laptop?", "expect_answered": true, "expect_source_contains": "Technical Support"},
+  {"question": "How many failed login attempts before my account is locked?", "expect_answered": true, "expect_source_contains": "Account Management"},
+  {"question": "How long can I pause my subscription for?", "expect_answered": true, "expect_source_contains": "Account Management"},
+  {"question": "What happens if my order arrives damaged?", "expect_answered": true, "expect_source_contains": "Delivery"},
+  {"question": "How much notice do you give before a subscription price increase?", "expect_answered": true, "expect_source_contains": "Billing"},
+  {"question": "What format is used for formal complaint reference numbers?", "expect_answered": true, "expect_source_contains": "Escalation"},
+  {"question": "What is the capital of France?", "expect_answered": false},
+  {"question": "Can you give me the CEO's personal phone number?", "expect_answered": false}
+]

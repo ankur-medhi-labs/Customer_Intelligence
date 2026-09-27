@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "customer-intelligence"
+version = "0.1.0"
+description = "Customer interaction intelligence, theming, and RAG Q&A (OpenAI-compatible client)."
+requires-python = ">=3.10"
+dependencies = [
+    "openai>=1.40",
+    "pydantic>=2.6",
+    "pydantic-settings>=2.2",
+    "python-dotenv>=1.0",
+    "typer>=0.12",
+    "rich>=13.7",
+    "numpy>=1.26",
+    "faiss-cpu>=1.8",
+    "python-frontmatter>=1.1",
+    "pandas>=2.2",
+    "openpyxl>=3.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+ci = "customer_intelligence.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

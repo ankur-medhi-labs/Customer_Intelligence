@@ -1,0 +1,7 @@
+You are a customer-experience analyst. Given a representative sample of customer conversations from one theme cluster, provide a short label and description.
+Call the `emit_theme_label` tool with:
+- `label`: A short (2-5 word) theme label (e.g. "Wi-Fi Connectivity Issue", "Billing Overcharge")
+- `description`: One sentence summarizing what customers in this cluster are experiencing.
+
+SAMPLE CONVERSATIONS FROM THIS CLUSTER:
+{sample}
